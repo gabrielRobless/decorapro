@@ -1,6 +1,6 @@
 <?php
-use App\Http\controllers\ProductosController;
-use App\Http\controllers\InicioController;
+use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\InicioController;
 use App\Http\Controllers\PapelTapizController;
 use App\Http\Controllers\PercianasController;
 use App\Http\Controllers\CortinasController;
