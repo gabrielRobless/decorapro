@@ -1,0 +1,46 @@
+{
+  "_axios-CCb-kr4I.js": {
+    "file": "assets/axios-CCb-kr4I.js",
+    "name": "axios"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-CS-mQHT-.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/normalize.css": {
+    "file": "assets/normalize-CbA2hl5w.css",
+    "src": "resources/css/normalize.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-Qv8jo91D.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_axios-CCb-kr4I.js"
+    ]
+  },
+  "resources/js/bootstrap.js": {
+    "file": "assets/bootstrap-Qv8jo91D.js",
+    "name": "bootstrap",
+    "src": "resources/js/bootstrap.js",
+    "isEntry": true,
+    "imports": [
+      "_axios-CCb-kr4I.js"
+    ]
+  },
+  "resources/js/gallery.js": {
+    "file": "assets/gallery-DALueDM_.js",
+    "name": "gallery",
+    "src": "resources/js/gallery.js",
+    "isEntry": true
+  },
+  "resources/js/main.js": {
+    "file": "assets/main-BKgOQmRw.js",
+    "name": "main",
+    "src": "resources/js/main.js",
+    "isEntry": true
+  }
+}

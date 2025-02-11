@@ -1,43 +1,52 @@
 @extends('layouts.app')
 
 @section('contenido')
-    <div class="sider__contenedor">
-        <div class="container" id="container">
-            <div class="caption" id="slider-caption">
-                <div class="caption-heading">
-                    <h1>Lorem Ipsum</h1>
+
+
+        <div class="distribuidor--formulario--inter--fotos slider__contenedor">
+            <div class="slider-container--main">
+                <div class="slider slider-distribuidor--main">
+                  <div class="slide"><img src="https://decorapro-wp.s3.us-east-1.amazonaws.com/web/DECORA_page-0001-1536x864.jpg" alt="Image 1"></div>
+                  <div class="slide"><img src="https://decorapro-wp.s3.us-east-1.amazonaws.com/web/DECORA_page-0002-1536x864.jpg" alt="Image 2"></div>
+                  <div class="slide"><img src="https://decorapro-wp.s3.us-east-1.amazonaws.com/web/DECORA_page-0003-1536x864.jpg" alt="Image 3"></div>
+                  <div class="slide"><img src="https://decorapro-wp.s3.us-east-1.amazonaws.com/web/DECORA_page-0005-1536x864.jpg" alt="Image 3"></div>
                 </div>
-                <div class="caption-subhead"><span>dolor sit amet, consectetur adipiscing elit.</span></div><a class="btn"
-                    href="#">Sit Amet</a>
-            </div>
-            <div class="left-col" id="left-col">
-                <div id="left-slider"></div>
-            </div>
-            <ul class="nav">
-                <li class="slide-up"> <a href="#">
-                        << /a>
-                </li>
-                <li class="slide-down"> <a id="down_button" href="#">></a></li>
-            </ul>
-        </div>
-    </div>
+                <button class="prev"><i class="fa-solid fa-less-than"></i></button>
+                <button class="next"><i class="fa-solid fa-greater-than"></i></button>
+              </div>
+
+
+
+         </div>
+
+
+
+
     <div class="menuindex__contenedor">
+        <a href="/papeltapiz">
         <div class="tapiz--cuadro menuindex__cuadro">
 
             <h3>Papel tapiz</h3>
         </div>
+        </a>
+        <a href="/cortinas">
         <div class="tapiz--cortina menuindex__cuadro">
 
             <h3>Cortinas</h3>
         </div>
+        </a>
+        <a href="/persianas">
         <div class="tapiz--perciana menuindex__cuadro">
 
             <h3>PERSIANAS</h3>
         </div>
+        </a>
+        <a href="/automatizacion">
         <div class="tapiz--auto menuindex__cuadro">
 
             <h3>SMART HOME</h3>
         </div>
+        </a>
     </div>
     <div class="marcas_pape marcas__contenedor">
 
@@ -99,7 +108,7 @@
             </svg>
         </div>
         <div class="svg_container">
-            <svg class="logo hidden md:block" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="106px" height="106px" viewBox="0 0 141.4 141.4">
+            <svg class="hidden logo md:block" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="106px" height="106px" viewBox="0 0 141.4 141.4">
                 <path style="fill:#c4014b;stroke:#c4014b;stroke-miterlimit:10" d="M.5.5h140.4v140.4H.5z"></path>
                 <path fill="#fff" d="M42.8 70.9c-.4-.3-.8-.5-1.4-.5H28.8v-7.6h9c.6 0 1-.2 1.4-.5.4-.4.6-.8.6-1.4 0-.6-.2-1-.6-1.4-.4-.4-.8-.5-1.4-.5h-9v-7.4h12.6c.6 0 1.1-.2 1.4-.5.4-.4.6-.8.6-1.4 0-.6-.2-1-.6-1.4-.4-.4-.8-.5-1.4-.5H26.8c-.6 0-1 .2-1.4.6-.4.4-.6.9-.6 1.5v22.4c0 .6.2 1.1.6 1.5.4.4.9.6 1.4.6h14.6c.6 0 1.1-.2 1.4-.5.4-.4.6-.8.6-1.4 0-.7-.2-1.2-.6-1.6zM66.2 61.3c-1.5-1.4-3.6-2.2-6.2-2.5-2.3-.2-3.8-.7-4.7-1.4-.8-.7-1.2-1.6-1.2-2.6 0-1.1.4-2 1.4-2.6 1-.6 2.2-.9 3.8-.9 1.3 0 2.3.2 3.1.7.8.5 1.5 1.2 2.1 2.1.2.3.4.6.8.8.3.2.7.3 1.1.3.4 0 .7-.1 1-.3.5-.4.8-.9.8-1.5 0-.4-.1-.9-.4-1.4-.9-1.5-2-2.6-3.3-3.4-1.3-.8-3-1.2-4.9-1.2-1.7 0-3.3.3-4.7.8-1.4.6-2.6 1.4-3.4 2.5-.8 1.1-1.2 2.4-1.2 3.9 0 2.1.8 3.9 2.4 5.3 1.6 1.4 3.8 2.2 6.5 2.5 1.9.2 3.3.7 4.1 1.6.9.8 1.3 1.8 1.3 3s-.5 2.2-1.5 2.9c-1.1.7-2.4 1.1-3.9 1.1-1.3 0-2.5-.3-3.6-.9-1.1-.6-1.8-1.2-2.1-2-.2-.4-.4-.7-.8-1-.4-.2-.8-.4-1.2-.4h-.4c-.5.1-.8.3-1.1.6-.3.3-.4.7-.4 1.1 0 .2.1.5.2.8.7 1.6 1.9 3 3.7 4 1.8 1 3.7 1.5 5.9 1.5 1.6 0 3.2-.3 4.6-.9 1.4-.6 2.6-1.5 3.5-2.7.9-1.2 1.3-2.6 1.3-4.3-.4-2.3-1.2-4.1-2.6-5.5zM92.6 48.3c-.4-.4-.8-.5-1.4-.5H74c-.5 0-1 .2-1.4.5-.4.4-.5.8-.5 1.4 0 .6.2 1 .5 1.4.4.4.8.5 1.4.5h6.7v20.6c0 .6.2 1.1.6 1.5.4.4.9.6 1.4.6.6 0 1-.2 1.4-.6.4-.4.6-.9.6-1.5V51.6h6.6c.5 0 1-.2 1.4-.5.4-.4.5-.8.5-1.4 0-.6-.2-1-.6-1.4zM116.4 71.4l-9.1-22.3c-.3-.9-1-1.4-1.9-1.4-.6 0-1.4.2-1.9 1.4l-9.1 22.2c-.1.3-.2.6-.2.9 0 .5.2 1 .6 1.4.4.4.9.6 1.4.6.4 0 .8-.1 1.1-.3.3-.2.6-.5.8-.9l2.4-5.9h10l2.3 5.9c.2.4.4.7.8.9.3.2.7.3 1.1.3.6 0 1-.2 1.4-.6.4-.4.6-.9.6-1.4-.1-.2-.2-.5-.3-.8zm-7.4-7.8h-7.2l3.6-9.1 3.6 9.1z"></path>
                 <path fill="#fff" d="M79.4 86.1c-.1 0-.3.1-.4.2-.1.1-.2.2-.2.4v3.9H73v-3.9c0-.2-.1-.3-.2-.4-.1-.1-.2-.2-.4-.2-.1 0-.3.1-.4.2-.1.1-.2.2-.2.4v8.9c0 .1.1.3.2.4.1.1.2.2.4.2s.3-.1.4-.2c.1-.1.1-.2.1-.4v-4h5.9v4c0 .1.1.3.2.4.1.1.2.2.4.2s.3-.1.4-.2c.1-.1.1-.2.1-.4v-8.9c0-.2-.1-.3-.2-.4 0-.2-.1-.2-.3-.2zM90.6 86.6c-.8-.4-1.6-.7-2.6-.7-.9 0-1.8.2-2.6.7-.8.4-1.4 1.1-1.8 1.8-.4.8-.6 1.6-.6 2.6s.2 1.8.6 2.6c.4.8 1 1.4 1.8 1.8.8.4 1.6.7 2.6.7.9 0 1.8-.2 2.6-.7.8-.4 1.4-1.1 1.8-1.8.4-.8.6-1.7.6-2.6 0-1-.2-1.8-.6-2.6-.4-.7-1-1.3-1.8-1.8zm1.4 4.5c0 .8-.2 1.5-.5 2.1-.3.6-.8 1.1-1.4 1.5-.6.4-1.3.5-2 .5s-1.4-.2-2-.5c-.6-.4-1.1-.8-1.4-1.5-.3-.6-.5-1.3-.5-2.1s.2-1.5.5-2.1c.3-.6.8-1.1 1.4-1.5.6-.4 1.3-.5 2-.5s1.4.2 2 .5c.6.4 1.1.8 1.4 1.5.3.6.5 1.3.5 2.1zM105.8 86.2c-.1-.1-.2-.2-.4-.2s-.4.1-.5.3l-3.8 7.9-3.9-7.9c-.1-.2-.3-.3-.5-.3-.1 0-.3.1-.4.2-.1.1-.2.2-.2.4v8.9c0 .1.1.3.2.4.1.1.2.2.4.2s.3-.1.4-.2c.1-.1.1-.2.1-.4v-6.8l3.3 6.8c.1.2.3.3.5.3s.4-.1.5-.3l3.3-7v6.9c0 .1.1.3.2.4.1.1.2.2.4.2.1 0 .3-.1.4-.2.1-.1.1-.2.1-.4v-8.9s0-.2-.1-.3zM115.9 95h-5.3v-3.4h3.8c.1 0 .3-.1.4-.2.1-.1.2-.2.2-.4 0-.1-.1-.3-.2-.4-.1-.1-.2-.2-.4-.2h-3.8V87h5.3c.2 0 .3 0 .4-.1.1-.1.2-.2.2-.4 0-.1-.1-.3-.2-.4-.1-.1-.2-.2-.4-.2h-5.8c-.1 0-.3.1-.4.2-.1.1-.2.2-.2.4v8.9c0 .1.1.3.2.4.1.1.2.2.4.2h5.8c.2 0 .3-.1.4-.2.1-.1.2-.2.2-.4 0-.1-.1-.3-.2-.4h-.4z"></path>
@@ -194,22 +203,24 @@
 
     </div>
     <div class="menubody-papel menubody-papel__contenedor">
-        <div class="menubody-papel-peque ">
+        <div class="menubody-cortina-peque ">
             <div>
 
                 <p class="button-link-main-description " >Contamos con más de 400 modelos de entrega inmediata</p>
             </div>
             <div>
 
-                <a href="#" class="button-link-main ">Ver Catalogo</a>
+                <a href="/papeltapiz" class="button-link-main ">Ver Catalogo</a>
             </div>
 
         </div>
+
         <div class="menubody-papel-img">
             <p>PAPEL TAPIZ</p>
         </div>
+
     </div>
-    <div class="menubody-cortina menubody-cortina __contenedor">
+    <div class="menubody-cortina __contenedor">
         <div class="video-background">
             <video autoplay muted loop id="bg-video">
                 <source src="https://decorapro-wp.s3.amazonaws.com/web/Flexilux-Cortina-1.mp4" type="video/mp4">
@@ -226,7 +237,7 @@
             </div>
             <div>
 
-                <a href="" class="button-link-main ">Ver Catalogo</a>
+                <a href="/cortinas" class="button-link-main ">Ver Catalogo</a>
             </div>
         </div>
 
@@ -238,7 +249,7 @@
             </div>
             <div>
 
-                <a href="" class="button-link-main "> Ver Catalogo</a>
+                <a href="/persianas" class="button-link-main "> Ver Catalogo</a>
             </div>
         </div>
         <div class="video-background">
