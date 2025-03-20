@@ -15,7 +15,8 @@ use App\Http\Controllers\TerminosController;
 
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
+use App\Models\PapelTapiz;
 
 Route::get('/',[InicioController::class, 'index'])->name('Inicio');
 Route::get('/persianas',[PercianasController::class, 'index'])->name('persianas');
@@ -30,5 +31,8 @@ Route::get('/politicas-de-privacidad',[PolPrivController::class, 'index'])->name
 Route::get('/politica-de-reembolso',[ReenController::class, 'index'])->name('reembolso');
 Route::get('/terminos-del-servicio',[TerminosController::class, 'index'])->name('Terminos');
 
+Route::post('/enviar-formulario', [DistribuidorController::class, 'enviar'])->name('enviar.formulario.post');
+Route::get('/enviar-formulario', [Inicio::class, 'enviar'])->name('enviar.formulario.get');
 
-Route::get('/enviar-formulario', [Inicio::class, 'enviar'])->name('enviar.formulario');
+
+Route::get('/productos/buscar/ajax', [PapelTapizController::class, 'buscarAjax'])->name('productos.buscar.ajax');

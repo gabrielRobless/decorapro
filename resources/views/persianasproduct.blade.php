@@ -102,6 +102,10 @@
                 <input type="radio" id="Triple Shade" name="tipo" value="Triple Shade">
                 <label for="Triple Shade"> Triple Shade</label>
             </div>
+            <div>
+                <input type="radio" id="Traslúcidas" name="tipo2" value="Traslúcidas">
+                <label for="Traslúcidas"> Traslúcidas</label>
+            </div>
 
 
         </div>

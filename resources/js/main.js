@@ -2,28 +2,42 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    const subPapel = document.querySelector(".sub_papel__contenedor")
-    const subPersianas = document.querySelector(".sub_papel-persianas__contenedor")
+    const subPapel = document.querySelector(".sub_papel__contenedor");
+    const subPersianas = document.querySelector(".sub_papel-persianas__contenedor");
     const menupapel = document.querySelector(".papeltapiz");
     const menupersianas = document.querySelector(".persianas");
-    const buttons = document.querySelectorAll("button");
+    const body = document.querySelector("main");
 
-
-    const body =document.querySelector("body");
-    menupapel.addEventListener("mouseover",()=>{
-        subPapel.classList.remove("inactivo")
+    // Mantener el submenú visible mientras esté sobre el menú correspondiente
+    menupapel.addEventListener("mouseover", () => {
+        subPapel.classList.remove("inactivo");
+        subPersianas.classList.add("inactivo");  // Ocultar el submenú de persianas si se pasa por el de papel
     });
 
-    menupersianas.addEventListener("mouseover", ()=>{
-        subPersianas.classList.remove("inactivo")
+    menupersianas.addEventListener("mouseover", () => {
+        subPersianas.classList.remove("inactivo");
+        subPapel.classList.add("inactivo");  // Ocultar el submenú de papel si se pasa por el de persianas
     });
 
-    body.addEventListener("click",()=>{
-        subPapel.classList.add("inactivo")
-        subPersianas.classList.add("inactivo")
+    // Cerrar los submenús si el clic es fuera del menú o submenú
+    body.addEventListener("mouseover", (event) => {
+        if (!menupapel.contains(event.target) && !subPapel.contains(event.target)) {
+            subPapel.classList.add("inactivo");
+        }
+
+        if (!menupersianas.contains(event.target) && !subPersianas.contains(event.target)) {
+            subPersianas.classList.add("inactivo");
+        }
     });
 
-    console.log("hola2")
+    // Evitar que el clic dentro de los submenús cierre el menú
+    subPapel.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
+    subPersianas.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
+
 
     const prevButton = document.querySelector(".prev");
     const nextButton = document.querySelector(".next");
@@ -31,63 +45,69 @@ document.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelectorAll(".slide");
     let currentIndex = 0;
     let autoSlideInterval;
+    const totalSlides = slides.length - 1; // Restamos 1 por la imagen duplicada
 
-    // Muestra la imagen actual
     function updateSlider() {
-      const offset = -currentIndex * 100; // Cada imagen ocupa el 100% del contenedor
-      slider.style.transform = `translateX(${offset}%)`;
+        slider.style.transition = "transform .5s ease-in-out";
+        slider.style.transform = `translateX(${-currentIndex * 100}%)`;
+
+        // Si es el último slide duplicado, hacer un "reset" rápido al primer slide real
+        if (currentIndex === totalSlides) {
+            setTimeout(() => {
+                slider.style.transition = "none";
+                currentIndex = 0;
+                slider.style.transform = `translateX(${-currentIndex * 100}%)`;
+            }, 500);
+        }
     }
 
-    // Mueve al siguiente slide
     function moveToNextSlide() {
-      if (currentIndex < slides.length - 1) {
-        currentIndex++;
-      } else {
-        currentIndex = 0; // Vuelve al primer slide al llegar al final
-      }
-      updateSlider();
+        if (currentIndex < totalSlides) {
+            currentIndex++;
+        }
+        updateSlider();
     }
 
-    // Mueve al slide anterior
     function moveToPrevSlide() {
-      if (currentIndex > 0) {
-        currentIndex--;
-      } else {
-        currentIndex = slides.length - 1; // Vuelve al último slide
-      }
-      updateSlider();
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalSlides - 1; // Va al último slide real
+            slider.style.transition = "none"; // Elimina la animación para que no haya salto
+            slider.style.transform = `translateX(${-currentIndex * 100}%)`;
+            setTimeout(() => {
+                slider.style.transition = "transform .5s ease-in-out";
+                currentIndex--;
+                updateSlider();
+            }, 50);
+        }
+        updateSlider();
     }
 
-    // Inicia el cambio automático de slides
     function startAutoSlide() {
-      autoSlideInterval = setInterval(() => {
-        moveToNextSlide();
-      }, 2000);
+        autoSlideInterval = setInterval(() => {
+            moveToNextSlide();
+        }, 8000);
     }
 
-    // Detiene el cambio automático de slides
     function stopAutoSlide() {
-      clearInterval(autoSlideInterval);
+        clearInterval(autoSlideInterval);
     }
 
-    // Agrega eventos a los botones
     nextButton.addEventListener("click", () => {
-      moveToNextSlide();
-      stopAutoSlide();
-      startAutoSlide(); // Reinicia el temporizador al interactuar
+        moveToNextSlide();
+        stopAutoSlide();
+        startAutoSlide();
     });
 
     prevButton.addEventListener("click", () => {
-      moveToPrevSlide();
-      stopAutoSlide();
-      startAutoSlide(); // Reinicia el temporizador al interactuar
+        moveToPrevSlide();
+        stopAutoSlide();
+        startAutoSlide();
     });
 
-    // Iniciar el slider
     updateSlider();
-    startAutoSlide(); // Comienza el cambio automático
-
-
+    startAutoSlide();
 
 
 });

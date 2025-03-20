@@ -5,21 +5,24 @@
 
 <div class="papel-grind--body papel-grind--body__contenedor">
 <div class="pael-fomr-body">
-<form action="{{ route('papelt') }}" method="GET" class="formulario-tapiz">
+    <button id="toggle-filters" class="filtro-btn">Filtros</button>
+<form action="{{ route('papelt') }}" method="GET" class="formulario-tapiz" id="filter-container" >
+    <button type="submit">Filtrar</button>
     <div class="form-radio">
         <p>Tiempo de Entrega</p>
         <div>
             <input type="radio" id="Inmediata" name="entrega" value="Entrega Inmediata (3 - 4 días)">
-            <label for="Inmediata">Entrega Inmediata (3 - 4 días)</label>
+            <label for="Inmediata">Entrega Inmediata </label>
         </div>
         <div>
             <input type="radio" id="Entrega" name="entrega" value="Entrega (4 - 5 semanas)">
-            <label for="Entrega">Entrega (4 - 5 semanas)</label>
+            <label for="Entrega">Bajo pedido <br> (4-5 semanas)</label>
         </div>
 
     </div>
 
     <div class="form-radio">
+
         <p>Color</p>
      <div class="dplay-coloresfiltro" style="">
 
@@ -30,7 +33,7 @@
         </div>
         <div>
             <input type="radio" id="Negro" name="color" value="Negro">
-            <label for="Negro"><img src="https://decorapro-wp.s3.amazonaws.com/2023/01/Negro.jpg" width="10px" style="max-width: 30px"  alt=""></label>
+            <label for="Negro"><div class="dplay-coloresfiltro-interno"></div></label>
         </div>
         <div>
             <input type="radio" id="Marron" name="color" value="Marron">
@@ -76,6 +79,61 @@
         <div>
             <input type="radio" id="Marfil" name="color" value="Marfil">
             <label for="Marfil"><img src="https://decorapro-wp.s3.amazonaws.com/2023/01/Marfil.jpg" width="10px" style="max-width: 30px"  alt=""></label>
+        </div>
+    </div>
+    <div class="form-radio">
+        <p>Estilos</p>
+        <div>
+            <input type="radio" id="Lisos" name="estilos" value="Lisos">
+            <label for="Lisos">Lisos</label>
+        </div>
+        <div>
+            <input type="radio" id="Textiles" name="estilos" value="Textiles">
+            <label for="Textiles">Textiles</label>
+        </div>
+        <div>
+            <input type="radio" id="industrial" name="estilos" value="industrial">
+            <label for="industrial">Industrial</label>
+        </div>
+        <div>
+            <input type="radio" id="vintage" name="estilos" value="vintage">
+            <label for="vintage">Vintage</label>
+        </div>
+        <div>
+            <input type="radio" id="Rayas" name="estilos" value="Rayas">
+            <label for="Rayas">Rayas</label>
+        </div>
+        <div>
+            <input type="radio" id="Infantil" name="estilos" value="Infantil">
+            <label for="Infantil">Infantil</label>
+        </div>
+        <div>
+            <input type="radio" id="clásico" name="estilos" value="clásico">
+            <label for="clásico">Clásico</label>
+        </div>
+        <div>
+            <input type="radio" id="Geométrico" name="estilos" value="Geométrico">
+            <label for="Geométrico">Geométrico</label>
+        </div>
+        <div>
+            <input type="radio" id="Texturizado" name="etiquetas" value="Texturizado">
+            <label for="Texturizado">Texturizado</label>
+        </div>
+        <div>
+            <input type="radio" id="Ladrillo" name="etiquetas" value="Ladrillo">
+            <label for="Ladrillo">Ladrillo</label>
+        </div>
+        <div>
+            <input type="radio" id="Flores" name="estilos" value="Flores">
+            <label for="Flores">Flores</label>
+        </div>
+        <div>
+            <input type="radio" id="Marmol" name="estilos" value="Marmol">
+            <label for="Marmol">Mármol</label>
+        </div>
+        <div>
+            <input type="radio" id="Plantas" name="estilos" value="Plantas">
+            <label for="Plantas">Plantas</label>
         </div>
     </div>
 
@@ -133,43 +191,6 @@
     </div>
 
 
-        <div class="form-radio">
-        <p>Estilos</p>
-        <div>
-            <input type="radio" id="Lisos" name="estilos" value="Lisos">
-            <label for="Lisos">Lisos</label>
-        </div>
-        <div>
-            <input type="radio" id="Textiles" name="estilos" value="Textiles">
-            <label for="Textiles">Textiles</label>
-        </div>
-        <div>
-            <input type="radio" id="industrial" name="estilos" value="industrial">
-            <label for="industrial">Industrial</label>
-        </div>
-        <div>
-            <input type="radio" id="vintage" name="estilos" value="vintage">
-            <label for="vintage">Vintage</label>
-        </div>
-        <div>
-            <input type="radio" id="Rayas" name="estilos" value="Rayas">
-            <label for="Rayas">Rayas</label>
-        </div>
-        <div>
-            <input type="radio" id="Infantil" name="estilos" value="Infantil">
-            <label for="Infantil">Infantil</label>
-        </div>
-        <div>
-            <input type="radio" id="clásico" name="estilos" value="clásico">
-            <label for="clásico">Clásico</label>
-        </div>
-        <div>
-            <input type="radio" id="Geométrico" name="estilos" value="Geométrico">
-            <label for="Geométrico">Geométrico</label>
-        </div>
-
-
-    </div>
 
 
 
@@ -177,7 +198,7 @@
 
 
 
-    <button type="submit">Filtrar</button>
+
 </form>
 </div>
 
@@ -187,13 +208,22 @@
 
         </div>
         <div class="papel-baner-text">
-            <h1>PAPEL TAPIZ</h1>
-            <P>Dale vida a tu hogar</P>
-            <p>Tiempo de entrega garanitzado</p>
+            <h1>MAYORISTA DE PAPEL TAPIZ</h1>
+ <br>
+            <p>¡Más de 1,200 modelos a elegir!</p>
+            <br>
 
         </div>
     </div>
+
+    <input type="text" id="search" class="buscador-eng"  placeholder="Buscar productos..." />
+
+<!-- Contenedor para mostrar los resultados -->
+<div id="productos-list">
+    <!-- Los productos encontrados aparecerán aquí -->
+</div>
 <div class="papel-grind papel__contenedor">
+
     @foreach($papel as $item)
         <div class="card-papel">
             <a href="{{ route('producto.show', $item->id) }}" class="card-papel">
@@ -204,7 +234,7 @@
             @endphp
         <img class="img-papel" src="{{ $primeraImagen }}" width="200" height="200" alt="imagen">
 
-        <p class="card-papel-title">{{ $item->Nombre }}</p>
+        <p class="card-papel-title"> {!! $item->Nombre!!}</p>
         <p class="card-papel-fabri">{{ $item->{'Valor(es) del atributo 2'} }}</p>
 
         <li> - {{ $item->SKU }}</li>
@@ -218,8 +248,68 @@
 <div class="pagination">
     {{ $papel->links() }}
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#search').on('input', function() {
+            var query = $(this).val();
+
+            if (query.length >= 3) {  // Iniciar la búsqueda cuando el texto tenga al menos 3 caracteres
+                $.ajax({
+                    url: "{{ route('productos.buscar.ajax') }}",
+                    method: "GET",
+                    data: { query: query },
+                    success: function(data) {
+                        $('#productos-list').html(data);
+                    }
+                });
+            } else {
+                $('#productos-list').empty(); // Limpiar los resultados si no hay texto
+            }
+        });
+    });
 
 
+
+
+    $(document).on('input', '#search', function() {
+    let query = $(this).val();
+
+    if (query.length > 0) {
+        $.ajax({
+            url: '/productos/buscar/ajax',
+            type: 'GET',
+            data: { query: query },
+            success: function(response) {
+                $('#productos-list').html(response);
+
+                // Si hay resultados, ocultamos el elemento con la clase .papel-grind
+                if ($('.busqueda-tapiz li').length > 0) {
+                    $('.papel-grind').hide();
+                } else {
+                    $('.papel-grind').show();
+                }
+            }
+        });
+    } else {
+        $('#productos-list').html('');
+        $('.papel-grind').show(); // Si se borra el texto, volvemos a mostrar
+    }
+});
+
+
+
+document.querySelector("#toggle-filters").addEventListener("click", function() {
+    let filterContainer = document.querySelector("#filter-container");
+    if (filterContainer.classList.contains("mostrar")) {
+        filterContainer.classList.remove("mostrar");
+    } else {
+        filterContainer.classList.add("mostrar");
+    }
+});
+
+
+</script>
 
 
 

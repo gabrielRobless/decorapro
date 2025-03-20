@@ -118,8 +118,8 @@
     </div>
 </div>
     <div class="swiper">
-        <img src="https://decorapro-wp.s3.amazonaws.com/2023/01/1-Persiana-de-Madera-Wengue.jpg" alt="">
-    </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tqj6mR3sLvQ?si=EOPvs4iTM3oSlwyJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     </div>
 
 </div>
 <div class="gris-seccion-auto gris-seccion-auto__contenedor">

@@ -22,7 +22,7 @@
         </div>
         <!-- Imagen principal -->
         <div class="imagen-principal">
-            <img id="imagenPrincipal"src="{{ explode(',', $persiana->Imagenes)[0] }}" alt="Imagen principal" width="400">
+            <img id="imagenPrincipal"src="{{ explode(',', $persiana->Imagenes)[0] }}" alt="Imagen principal" width="400" height="400">
         </div>
 
 

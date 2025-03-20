@@ -1,14 +1,16 @@
 @extends('layouts.app')
 
 @section('contenido')
-    <div class="portadaper portadaper__contenedor">
+    <div class="portadaper ">
         <a href="/persianas/products">
-        <h1 class="portadaper--title">Persianas</h1></a>
-        <p class="portadaper--sub--title">cotiza tu espacio y obten la medicion gratis</p>
+        <h1 class="portadaper--title">Persianas México</h1></a>
+        <p class="portadaper--sub--title">Residencial | Oficinas | Hotelería<br>
+         </p>
     </div>
 
     <div class="cadr--menu cadr--menu__contenedor">
         <div class="cardunity">
+            <a href="/persianas/products?tipo=Malla+Solar">
             <div class="cardunity__image">
                 <img src="https://decorapro-wp.s3.amazonaws.com/2023/01/Persiana-Malla-1.jpeg.webp" alt="">
             </div>
@@ -16,6 +18,7 @@
                 <h3>Malla Enrollable</h3>
                 <p>Variedad de diseños fabricados con tejidos translúcidos</p>
             </div>
+        </a>
         </div>
         <div class="cardunity">
             <a href="/persianas/products?tipo=Traslucida">
@@ -30,6 +33,7 @@
         </a>
         </div>
         <div class="cardunity">
+            <a href="/persianas/products?tipo=Blackout">
             <div class="cardunity__image">
                 <img src="https://decorapro-wp.s3.amazonaws.com/2023/01/BlackOutpersiana.jpeg.webp" alt="">
             </div>
@@ -37,6 +41,7 @@
                 <h3>Blackout Enrollable</h3>
                 <p>Variedad de diseños con tela blackout.</p>
             </div>
+        </a>
         </div>
 
         <div class="cardunity">

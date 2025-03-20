@@ -5,7 +5,7 @@ namespace App\Models {
     /**
      * App\Models\PapelTapiz
      *
-     * @property int(11)|null $Posicion
+     * @property mixed $Posicion
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
      * @property string|null $Largo
@@ -17,57 +17,57 @@ namespace App\Models {
      * @property string|null $Coleccion
      * @property string|null $Fabricante
      * @property string|null $Color
-     * @property int(11)|null $Posición
+     * @property mixed $Posición
      * @property string|null $Imagenes
      * @property string|null $Etiquetas
      * @property string|null $Categorias
-     * @property decimal(10,2)|null $Precionormal
-     * @property decimal(10,2)|null $Alturacm
-     * @property decimal(10,2)|null $Anchocm
-     * @property decimal(10,2)|null $Longitudcm
-     * @property decimal(10,2)|null $Pesokg
-     * @property int(11)|null $Inventario
+     * @property float|null $Precionormal
+     * @property float|null $Alturacm
+     * @property float|null $Anchocm
+     * @property float|null $Longitudcm
+     * @property float|null $Pesokg
+     * @property mixed $Inventario
      * @property string|null $Descripcion
      * @property string|null $Descripcioncorta
      * @property string|null $Visibilidadenelcatalogo
-     * @property int(11)|null $Publicado
+     * @property mixed $Publicado
      * @property string|null $Nombre
      * @property string|null $SKU
      * @property string|null $Tipo
      * @property int $id
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereTipo($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereSku($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereNombre($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz wherePublicado($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereVisibilidadenelcatalogo($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereDescripcioncorta($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereDescripcion($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereInventario($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz wherePesokg($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereLongitudcm($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereAnchocm($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereAlturacm($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz wherePrecionormal($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereCategorias($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereEtiquetas($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereImagenes($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz wherePosición($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereColor($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereFabricante($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereColeccion($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereFormato($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereEstilo($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereEntrega($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereAreaderrollo($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereAncho($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereLargo($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereCreatedAt($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz whereUpdatedAt($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz wherePosicion($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz newModelQuery()
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz newQuery()
-     * @method static \Illuminate\Database\Eloquent\Builder|PapelTapiz query()
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereId($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereTipo($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereSku($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereNombre($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz wherePublicado($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereVisibilidadenelcatalogo($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereDescripcioncorta($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereDescripcion($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereInventario($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz wherePesokg($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereLongitudcm($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereAnchocm($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereAlturacm($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz wherePrecionormal($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereCategorias($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereEtiquetas($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereImagenes($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz wherePosición($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereColor($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereFabricante($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereColeccion($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereFormato($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereEstilo($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereEntrega($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereAreaderrollo($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereAncho($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereLargo($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereCreatedAt($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz whereUpdatedAt($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz wherePosicion($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz newModelQuery()
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz newQuery()
+     * @method static \Illuminate\Database\Eloquent\Builder<PapelTapiz>|PapelTapiz query()
      * @method static mixed select($columns)
      * @method static mixed selectSub($query, $as)
      * @method static mixed selectRaw($expression, array $bindings)
@@ -304,24 +304,24 @@ namespace App\Models {
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
      * @property string|null $remember_token
-     * @property hashed $password
+     * @property string $password
      * @property \Illuminate\Support\Carbon|null $email_verified_at
      * @property string $email
      * @property string $name
      * @property int $id
      * @property-read \Illuminate\Database\Eloquent\Collection<int, \Illuminate\Notifications\DatabaseNotification> $notifications
      * @property-read int|null $notifications_count
-     * @method static \Illuminate\Database\Eloquent\Builder|User whereId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|User whereName($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|User whereEmail($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|User whereEmailVerifiedAt($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|User wherePassword($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|User whereRememberToken($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|User whereCreatedAt($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|User newModelQuery()
-     * @method static \Illuminate\Database\Eloquent\Builder|User newQuery()
-     * @method static \Illuminate\Database\Eloquent\Builder|User query()
+     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereId($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereName($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereEmail($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereEmailVerifiedAt($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<User>|User wherePassword($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereRememberToken($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereCreatedAt($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereUpdatedAt($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<User>|User newModelQuery()
+     * @method static \Illuminate\Database\Eloquent\Builder<User>|User newQuery()
+     * @method static \Illuminate\Database\Eloquent\Builder<User>|User query()
      * @method static mixed select($columns)
      * @method static mixed selectSub($query, $as)
      * @method static mixed selectRaw($expression, array $bindings)
@@ -547,7 +547,7 @@ namespace App\Models {
      * @method static mixed macroCall($method, $parameters)
      * @mixin \Illuminate\Database\Query\Builder
      */
-    class User extends \Illuminate\Database\Eloquent\Model
+    class User extends \Illuminate\Foundation\Auth\User
     {
         //
     }
@@ -555,7 +555,7 @@ namespace App\Models {
     /**
      * App\Models\cortina
      *
-     * @property int(11)|null $Posicion
+     * @property mixed $Posicion
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
      * @property string|null $Grosor
@@ -567,57 +567,57 @@ namespace App\Models {
      * @property string|null $TiempoEntrega
      * @property string|null $Marca
      * @property string|null $Color
-     * @property int(11)|null $Posición
+     * @property mixed $Posición
      * @property string|null $Imagenes
      * @property string|null $Etiquetas
      * @property string|null $Categorias
-     * @property decimal(10,2)|null $Precionormal
-     * @property int(11)|null $Alturacm
-     * @property int(11)|null $Anchocm
-     * @property int(11)|null $Longitudcm
-     * @property decimal(10,2)|null $Pesokg
-     * @property int(11)|null $Inventario
+     * @property float|null $Precionormal
+     * @property mixed $Alturacm
+     * @property mixed $Anchocm
+     * @property mixed $Longitudcm
+     * @property float|null $Pesokg
+     * @property mixed $Inventario
      * @property string|null $Descripcion
      * @property string|null $Descripcioncorta
      * @property string|null $Visibilidadenelcatalogo
-     * @property int(11)|null $Publicado
+     * @property mixed $Publicado
      * @property string|null $Nombre
      * @property string|null $SKU
      * @property string|null $Tipo
      * @property int $id
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereTipo($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereSku($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereNombre($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina wherePublicado($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereVisibilidadenelcatalogo($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereDescripcioncorta($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereDescripcion($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereInventario($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina wherePesokg($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereLongitudcm($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereAnchocm($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereAlturacm($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina wherePrecionormal($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereCategorias($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereEtiquetas($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereImagenes($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina wherePosición($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereColor($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereMarca($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereTiempoentrega($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereTipo2($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereTela($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereProteccionuv($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereComposicion($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina wherePeso($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereGrosor($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereCreatedAt($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina whereUpdatedAt($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina wherePosicion($value)
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina newModelQuery()
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina newQuery()
-     * @method static \Illuminate\Database\Eloquent\Builder|cortina query()
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereId($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereTipo($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereSku($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereNombre($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina wherePublicado($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereVisibilidadenelcatalogo($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereDescripcioncorta($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereDescripcion($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereInventario($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina wherePesokg($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereLongitudcm($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereAnchocm($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereAlturacm($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina wherePrecionormal($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereCategorias($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereEtiquetas($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereImagenes($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina wherePosición($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereColor($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereMarca($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereTiempoentrega($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereTipo2($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereTela($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereProteccionuv($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereComposicion($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina wherePeso($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereGrosor($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereCreatedAt($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina whereUpdatedAt($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina wherePosicion($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina newModelQuery()
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina newQuery()
+     * @method static \Illuminate\Database\Eloquent\Builder<cortina>|cortina query()
      * @method static mixed select($columns)
      * @method static mixed selectSub($query, $as)
      * @method static mixed selectRaw($expression, array $bindings)

@@ -26,20 +26,21 @@
     </div>
 
     <div class="datos">
-        <h1>{{ $papel->Nombre }}</h1>
+        <h1>{!! $papel->Nombre!!}</h1>
         <div class="info-papel">
 
             <p>Sku: {{ $papel->SKU }}</p>
-            <p class="papel-etiqueta">Etiquetas: {{ $papel->Etiquetas }}</p>
+
         </div>
 
 
         <table>
             <tbody>
                 <tr>
-                    <th>Peso</th>
-                    <td>{{ $papel->Pesokg }}</td>
+                    <th>Formato</th>
+                    <td>{{ $papel->Formato }}</td>
                 </tr>
+
                 <tr>
                     <th>Color</th>
                     <td>{{ $papel->Color }}</td>
@@ -60,6 +61,7 @@
             </tbody>
 
         </table>
+        <p class="papel-etiqueta">Etiquetas: {{ $papel->Etiquetas }}</p>
     </div>
 
 
@@ -75,7 +77,7 @@
 </div>
 
 <div class="productos-relacionados productos-relacionados__contenedor">
-    <h2>También te puede interesar</h2>
+    <h2>También te puede interesar:</h2>
     <div class="grid-relacionados">
         @foreach($productosRelacionados as $producto)
         <a href="{{ route('producto.show', ['id' => $producto->id]) }}">

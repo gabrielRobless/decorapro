@@ -28,7 +28,7 @@ class DistribuidorController extends Controller
        ]);
 
        // Enviar el correo
-       Mail::to('sistemas@pelotinas.com')->send(new FormularioMail($validatedData));
+       Mail::to('distribuidores@decorapro.mx')->send(new FormularioMail($validatedData));
 
        // Retornar una respuesta al usuario
        return redirect()->back()->with('success', 'El mensaje se envió correctamente.');

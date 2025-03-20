@@ -13,6 +13,7 @@ class PersianasProductController extends Controller
         $color = $request->query('color');
         $tipo = $request->query('tipo');
         $Categorias = $request->query('tela');
+        $tipo2 = $request->query('tipo2');
 
         $query = cortina::query();
 
@@ -23,6 +24,9 @@ class PersianasProductController extends Controller
         if ($tipo) {
             $query->where('Etiquetas', 'LIKE', "%$tipo%");
         }
+        if ($tipo2) {
+            $query->where('Tipo2', 'LIKE', "%$tipo2%");
+        }
         if ($Categorias) {
             $query->where('Tela', 'LIKE', "%$Categorias%");
         }
@@ -30,6 +34,7 @@ class PersianasProductController extends Controller
         $persiana = $query->paginate(16)->appends([
             'color' => $color,
             'tipo' => $tipo,
+            'tipo2' => $tipo2,
             'Categorias' => $Categorias,
         ]);
 

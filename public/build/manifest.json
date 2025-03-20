@@ -4,7 +4,7 @@
     "name": "axios"
   },
   "resources/css/app.css": {
-    "file": "assets/app-hyIIi2Mu.css",
+    "file": "assets/app-BYi9ksPd.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -38,7 +38,7 @@
     "isEntry": true
   },
   "resources/js/main.js": {
-    "file": "assets/main-BKgOQmRw.js",
+    "file": "assets/main-BPml8oFN.js",
     "name": "main",
     "src": "resources/js/main.js",
     "isEntry": true

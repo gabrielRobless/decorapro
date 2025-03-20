@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('contenido')
-<div class="portacortina portacortina__contenedor" >
+<div class="portacortina" >
     <h1>CORTINAS MEXICO</h1>
     <p>CATORCE DIAS PARA TU ENTREGA</p>
 </div>
@@ -171,13 +171,7 @@
             <p>Envíos a toda la República</p>
         </div>
     </div>
-    <div class="icono-tela">
-        <i class="fa-solid fa-medal"></i>
-        <div class="icono-tela-text">
-            <p>Somos distribuidores de VERTILUX (España). </p>
-            <p>2 años de garantía en todos los mecanismos. </p>
-        </div>
-    </div>
+
     <div class="icono-tela">
         <i class="fa-solid fa-wifi"></i>
         <div class="icono-tela-text">
